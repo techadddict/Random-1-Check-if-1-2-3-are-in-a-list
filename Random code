@@ -1,0 +1,19 @@
+#this program prints yes if a list contains 1,2 and 3 in any order or no if any/all of them is/are missing.
+
+# create an empty list that takes in userinput/create list to be appended
+a=[]
+
+# ask user how many numbers they will enter
+numL= int(input("How many numbers would you like to enter"))
+
+for i in range (0,numL):
+    nums= int(input("Please enter a number"))
+
+#add numbers to list a
+    a.append (nums)
+
+#test if 1,2,3 are elements of a
+if (1 in a and 2 in a and 3 in a):             
+   print ("Yes")
+else:
+    print ("No")
